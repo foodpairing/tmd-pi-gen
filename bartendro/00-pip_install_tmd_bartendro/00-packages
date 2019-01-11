@@ -1,0 +1,4 @@
+python-pip
+uwsgi
+uwsgi-plugin-python
+nginx-light
