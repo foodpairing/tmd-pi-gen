@@ -1,0 +1,9 @@
+IMG_NAME=TMD
+#APT_PROXY=http://172.17.0.1:3142
+FIRST_USER_NAME=tmd
+FIRST_USER_PASS=...
+ENABLE_SSH=1
+STAGE_LIST="stage0 stage1 stage2 bartendro"
+
+# custom settings
+GEMFURY_URL=https://repo.fury.io/.../foodpairing/

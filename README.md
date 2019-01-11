@@ -2,6 +2,20 @@
 
 _Tool used to create the raspberrypi.org Raspbian images_
 
+## Tailor-made Drinks bartendro-specific
+This repository includes a suitable config. Just change `FIRST_USER_PASS` and `GEMFURY_URL` and run
+```bash
+$ ./build-docker.sh
+```
+
+To iterate on the bartendro stage, run the build once with
+```bash
+$ PRESERVE_CONTAINER=1 ./build-docker.sh
+```
+Afterwards, modify the bartendro stage and re-build with
+```bash
+$ CONTINUE=1 PRESERVE_CONTAINER=1 ./build-docker.sh
+```
 
 ## Dependencies
 
