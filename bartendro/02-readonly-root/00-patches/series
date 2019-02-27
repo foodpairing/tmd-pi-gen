@@ -1,0 +1,3 @@
+00-boot-cmdline.diff
+01-fstab.diff
+02-bartendro-uwsgi.diff
