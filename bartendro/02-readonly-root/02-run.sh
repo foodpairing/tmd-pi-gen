@@ -7,13 +7,11 @@ dpkg-reconfigure openssh-server
 EOF
 
 # from http://hallard.me/raspberry-pi-read-only/
-rm -rf "${ROOTFS_DIR}/var/lib/dhcp/" "${ROOTFS_DIR}/var/lib/dhcpcd5" "${ROOTFS_DIR}/var/run" "${ROOTFS_DIR}/var/spool" "${ROOTFS_DIR}/var/lock" "${ROOTFS_DIR}/etc/resolv.conf"
+rm -rf "${ROOTFS_DIR}/var/lib/dhcp/" "${ROOTFS_DIR}/var/run" "${ROOTFS_DIR}/var/spool" "${ROOTFS_DIR}/var/lock"
 ln -s /tmp "${ROOTFS_DIR}/var/lib/dhcp"
-ln -s /tmp "${ROOTFS_DIR}/var/lib/dhcpcd5"
 ln -s /tmp "${ROOTFS_DIR}/var/run"
 ln -s /tmp "${ROOTFS_DIR}/var/spool"
 ln -s /tmp "${ROOTFS_DIR}/var/lock"
-ln -s /tmp/dhcpcd.resolv.conf "${ROOTFS_DIR}/etc/resolv.conf"
 
 rm -rf "${ROOTFS_DIR}/var/lib/nginx"
 ln -s /tmp "${ROOTFS_DIR}/var/lib/nginx"
