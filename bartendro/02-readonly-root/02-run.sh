@@ -1,6 +1,5 @@
 #!/bin/bash -e
 
-# install tmd_bartendro python package
 on_chroot <<EOF
 # generate SSH host keys (yes, these will be the same for all devices that use the same image build)
 dpkg-reconfigure openssh-server
