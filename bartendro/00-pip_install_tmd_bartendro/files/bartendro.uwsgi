@@ -6,7 +6,7 @@ callable = app
 chdir = /home/tmd/bartendro
 touch-reload = /home/tmd/bartendro/touch-reload
 enable-threads = true
-processes = 5
+processes = 2
 sharedarea = 1
 plugin = python27
 ;env = BARTENDRO_SOFTWARE_ONLY=1
