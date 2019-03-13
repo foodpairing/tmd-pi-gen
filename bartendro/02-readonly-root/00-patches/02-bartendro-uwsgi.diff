@@ -9,5 +9,5 @@
 +chdir = /tmp/tmd_bartendro
 +touch-reload = /tmp/tmd_bartendro/touch-reload
  enable-threads = true
- processes = 5
+ processes = 2
  sharedarea = 1
