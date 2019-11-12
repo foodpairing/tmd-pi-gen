@@ -167,6 +167,7 @@ export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
 export ENABLE_SSH="${ENABLE_SSH:-0}"
+export GEMFURY_URL
 
 export BASE_DIR
 
