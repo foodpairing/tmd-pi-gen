@@ -19,3 +19,5 @@ libmtp-runtime
 htop
 policykit-1
 ssh-import-id
+rng-tools
+ethtool
