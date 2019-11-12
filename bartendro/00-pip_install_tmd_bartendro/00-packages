@@ -1,5 +1,3 @@
 python-pip
 python-smbus
-uwsgi
-uwsgi-plugin-python
 nginx-light

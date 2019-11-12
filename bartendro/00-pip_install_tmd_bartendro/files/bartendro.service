@@ -1,0 +1,13 @@
+[Unit]
+Description=TMD Bartendro
+
+[Service]
+User=tmd
+Group=www-data
+WorkingDirectory=/home/tmd/bartendro
+#Environment=BARTENDRO_SOFTWARE_ONLY=1
+ExecStart=/usr/bin/python -m bartendro_server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

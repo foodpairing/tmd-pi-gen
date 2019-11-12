@@ -1,0 +1,11 @@
+--- a/rootfs/etc/systemd/system/bartendro.service
++++ b/rootfs/etc/systemd/system/bartendro.service
+@@ -4,7 +4,7 @@
+ [Service]
+ User=tmd
+ Group=www-data
+-WorkingDirectory=/home/tmd/bartendro
++WorkingDirectory=/tmp/tmd_bartendro
+ #Environment=BARTENDRO_SOFTWARE_ONLY=1
+ ExecStart=/usr/bin/python -m bartendro_server
+ Restart=on-failure
